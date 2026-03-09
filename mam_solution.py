@@ -20,8 +20,8 @@ if today_tuple in birthdays_dict:
         updated_letter = letter.replace('[NAME]', birthday_person['name'])
 
         #fetch password:
-        password = os.environ.get("password")
-        sender_email = os.environ.get("sender_email")
+        password = os.environ.get("PASSWORD")
+        sender_email = os.environ.get("SENDER_EMAIL")
         receiver_email = birthday_person['email']
 
         # Sending the data:
