@@ -1,3 +1,10 @@
+import csv
+import os
+import smtplib
+import random
+import pandas as pd
+from datetime import datetime
+
 today = datetime.now()
 today_tuple = (today.month, today.day)
 
