@@ -1,4 +1,5 @@
 import csv
+import os
 import smtplib
 import random
 import pandas as pd
@@ -18,7 +19,9 @@ if today_tuple in birthdays_dict:
         letter = file.read()
         updated_letter = letter.replace('[NAME]', birthday_person['name'])
 
-        sender_email = "chetanpalsra83@gmail.com"
+        #fetch password:
+        password = os.environ.get("password")
+        sender_email = os.environ.get("sender_email")
         receiver_email = birthday_person['email']
 
         # Sending the data:
