@@ -18,11 +18,6 @@ if today_tuple in birthdays_dict:
         letter = file.read()
         updated_letter = letter.replace('[NAME]', birthday_person['name'])
 
-        # Fetch password:
-        with open("fetch_file.txt", "r") as f:
-            password = f.readline().strip()
-
-
         sender_email = "chetanpalsra83@gmail.com"
         receiver_email = birthday_person['email']
 
