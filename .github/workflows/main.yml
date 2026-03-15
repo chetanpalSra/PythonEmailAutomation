@@ -2,8 +2,7 @@ name: Daily Midnight Script
 
 on:
   schedule:
-    # Runs at 00:00 UTC every single day
-    - cron: '0 0 * * *'
+    - cron: '30 18 * * *'
   workflow_dispatch: # Keeps the "Run Manual" button active
 
 # Prevents multiple instances of the script running at once
